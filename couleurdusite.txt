@@ -1,0 +1,8 @@
+color pixel and co 
+
+mauve : #7F4692;
+vert  : #BBCD12;
+rouge : #E42618;
+
+gris : #222221;
+bleu : #0000FF;
