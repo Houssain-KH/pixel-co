@@ -39,8 +39,53 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+
+
+
 body {
-    margin: 0
+   
+    color: #fff;
+    background: linear-gradient(-45deg, #AD5D98, #C66793, #7C4E99, #604C8D);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 article,
@@ -279,13 +324,13 @@ body {
 }
 
 body {
-    background-color: #0c0c0c;
+   /* background-color: #0c0c0c;
     font-size: 14px;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%*/
 }
 
 .l-viewport {
@@ -328,7 +373,7 @@ body {
     width: 2px;
     height: 70%;
     max-height: 750px;
-    background-color: #555;
+    background-color: black;
     opacity: .35;
     z-index: 10
 }
@@ -571,7 +616,7 @@ body {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color: transparent;
     border: none;
     opacity: 0;
     visibility: hidden;
@@ -642,7 +687,7 @@ body {
     position: absolute;
     top: 3px;
     left: 10px;
-    color: #555;
+    color: black;
     font-size: 14px;
     font-weight: 300
 }
@@ -784,7 +829,9 @@ body {
 .intro--banner img {
     position: absolute;
     bottom: 28px;
-    right: -12px
+    right: -12px;
+    margin-bottom: 108px; 
+    margin-right: 133px;
 }
 
 .intro--options {
@@ -953,7 +1000,7 @@ body {
 
 .work--lockup .slider--item a {
     text-decoration: none;
-    color: #858585
+    color: white;
 }
 
 .work--lockup .slider--item-title {
@@ -1510,7 +1557,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color:#443266;
     border: none;
     border-radius: 0
 }
@@ -1591,8 +1638,8 @@ body {
 }
 
 .work-request--options input[type="checkbox"]:checked+label {
-    background-color: #0f33ff;
-    border-color: #0f33ff
+    background-color: #443266;
+    border-color: #443266
 }
 
 .work-request--options input[type="checkbox"]:checked+label svg {
@@ -1634,7 +1681,7 @@ body {
 .work-request--information input[type="text"]:focus,
 .work-request--information input[type="email"]:focus {
     outline: none;
-    background-color: #0c0c0c
+    background-color: #443266;
 }
 
 .work-request--information label {
@@ -1722,7 +1769,6 @@ body {
     -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
     transform: translateZ(0) translateX(0) rotateY(0deg);
     min-height: 100%;
-    outline: 30px solid #0f33ff;
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
@@ -1750,7 +1796,7 @@ body {
 .effect-rotate-left--animate .container {
     -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
     transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
-    outline: 30px solid #0f33ff
+    
 }
 
 .outer-nav {
@@ -1803,7 +1849,9 @@ body {
     transition: transform .2s, opacity .2s;
     transition: transform .2s, opacity .2s, -webkit-transform .2s
 }
-
+.outer-nav>li:hover {
+    color: #443266;
+}
 .outer-nav>li.is-vis {
     -webkit-transform: translateX(0) translateZ(0);
     transform: translateX(0) translateZ(0);
@@ -1814,7 +1862,7 @@ body {
     transition: transform .4s, opacity .4s, -webkit-transform .4s
 }
 
-.outer-nav>li::before {
+/*.outer-nav>li::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1824,8 +1872,9 @@ body {
     width: 110%;
     height: 15px;
     opacity: 0;
-    background-color: #0f33ff
-}
+    background-color: #443266;
+
+}*/
 
 .outer-nav>li.is-active::before {
     opacity: 1
