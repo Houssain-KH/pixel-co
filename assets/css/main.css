@@ -39,9 +39,6 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-
-
-
 body {
    
     color: #fff;
@@ -296,15 +293,15 @@ th {
 }
 
 ::-moz-selection {
-    background: #FFF498
+    background: black
 }
 
 ::selection {
-    background: #FFF498
+    background: black
 }
 
 ::-moz-selection {
-    background: #FFF498
+    background: black
 }
 
 img::-moz-selection {
@@ -1404,10 +1401,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/snazzy-image2.png");
+    background-image: url("../img/backgroundmap.png");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 .contact--lockup {
